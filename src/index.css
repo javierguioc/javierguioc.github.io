@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global base styles */
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply antialiased selection:bg-emerald-400/20 selection:text-emerald-200;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prose defaults for content blocks */
+.prose {
+  @apply text-neutral-300;
+}
