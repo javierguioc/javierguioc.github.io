@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { projects } from './data/projects'
 import ProjectCard from './components/ProjectCard'
 import AboutContent from './sections/AboutContent'
+import AnimatedBackground from './components/AnimatedBackground'
 
 function useForceDarkTheme() {
   useEffect(() => {
@@ -24,6 +25,7 @@ export default function App() {
 
   return (
     <div className="min-h-dvh bg-neutral-950 text-neutral-100">
+      <AnimatedBackground />
       {/* Header / Navigation */}
       <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/60 bg-neutral-950/80 border-b border-white/5">
         <nav className="mx-auto max-w-6xl px-4 h-14 md:h-16 flex items-center justify-between">
@@ -78,12 +80,14 @@ export default function App() {
 
       {/* About */}
       <Section id="about" title="About Me">
-        <AboutContent />
+        <div className="reveal">
+          <AboutContent />
+        </div>
       </Section>
 
       {/* Learning Journey */}
       <Section id="journey" title="Learning Journey">
-        <ol className="relative border-s border-white/10 ms-2">
+        <ol className="relative border-s border-white/10 ms-2 reveal">
           {[
             {
               title: 'Foundations',
@@ -109,7 +113,7 @@ export default function App() {
 
       {/* Projects */}
       <Section id="projects" title="Projects">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
           {projects.map((p) => (
             <ProjectCard key={p.title} project={p} />
           ))}
@@ -118,7 +122,7 @@ export default function App() {
 
       {/* Contact */}
       <Section id="contact" title="Contact">
-        <div className="flex flex-wrap items-center gap-3 text-sm">
+        <div className="flex flex-wrap items-center gap-3 text-sm reveal">
           <a
             href="https://www.linkedin.com/in/javier-guio/"
             target="_blank"
