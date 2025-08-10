@@ -37,7 +37,7 @@ export default function AnimatedBackground() {
       canvas!.style.height = height + 'px'
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
 
-      const density = Math.min(120, Math.floor((width * height) / 20000))
+      const density = Math.min(90, Math.floor((width * height) / 30000))
       points = Array.from({ length: density }, () => ({
         x: rand(0, width),
         y: rand(0, height),
@@ -86,7 +86,7 @@ export default function AnimatedBackground() {
       }
 
       // draw points
-      ctx.fillStyle = 'rgba(16,185,129,0.6)'
+      ctx.fillStyle = 'rgba(16,185,129,0.5)'
       for (const p of points) {
         ctx.beginPath()
         ctx.arc(p.x, p.y, 1.2, 0, Math.PI * 2)

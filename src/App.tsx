@@ -24,7 +24,7 @@ export default function App() {
   useForceDarkTheme()
 
   return (
-    <div className="min-h-dvh bg-neutral-950 text-neutral-100">
+    <div className="relative min-h-dvh text-neutral-100">
       <AnimatedBackground />
       {/* Header / Navigation */}
       <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/60 bg-neutral-950/80 border-b border-white/5">
@@ -80,14 +80,14 @@ export default function App() {
 
       {/* About */}
       <Section id="about" title="About Me">
-        <div className="reveal">
+        <div className="reveal in-view">
           <AboutContent />
         </div>
       </Section>
 
       {/* Learning Journey */}
       <Section id="journey" title="Learning Journey">
-        <ol className="relative border-s border-white/10 ms-2 reveal">
+        <ol className="relative border-s border-white/10 ms-2 reveal in-view">
           {[
             {
               title: 'Foundations',
@@ -113,7 +113,7 @@ export default function App() {
 
       {/* Projects */}
       <Section id="projects" title="Projects">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal in-view">
           {projects.map((p) => (
             <ProjectCard key={p.title} project={p} />
           ))}
@@ -122,7 +122,7 @@ export default function App() {
 
       {/* Contact */}
       <Section id="contact" title="Contact">
-        <div className="flex flex-wrap items-center gap-3 text-sm reveal">
+        <div className="flex flex-wrap items-center gap-3 text-sm reveal in-view">
           <a
             href="https://www.linkedin.com/in/javier-guio/"
             target="_blank"
