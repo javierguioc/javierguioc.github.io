@@ -1,7 +1,7 @@
 import type { Project } from '../data/projects'
 
 export default function ProjectCard({ project }: { project: Project }) {
-  const { title, description, githubUrl, demoUrl, thumbnail, tags } = project
+  const { title, description, codeUrl, demoUrl, thumbnail, tags } = project
 
   return (
     <article className="group rounded-xl overflow-hidden border border-white/10 bg-white/5 hover:bg-white/10 transition-colors">
@@ -26,11 +26,11 @@ export default function ProjectCard({ project }: { project: Project }) {
         <p className="mt-2 text-neutral-400 text-sm line-clamp-3">{description}</p>
         <div className="mt-3 flex gap-2">
           <a
-            href={githubUrl}
+            href={codeUrl}
             target="_blank"
             className="text-xs rounded-md border border-white/10 px-2.5 py-1.5 hover:bg-white/5 text-neutral-200"
           >
-            GitHub
+            View Code
           </a>
           {demoUrl && (
             <a
@@ -42,21 +42,6 @@ export default function ProjectCard({ project }: { project: Project }) {
             </a>
           )}
         </div>
-        {demoUrl && (
-          <details className="mt-3">
-            <summary className="cursor-pointer text-xs text-neutral-400 hover:text-neutral-200">
-              Embed demo
-            </summary>
-            <div className="mt-2 aspect-video">
-              <iframe
-                src={demoUrl}
-                className="w-full h-full rounded-md border border-white/10"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                loading="lazy"
-              />
-            </div>
-          </details>
-        )}
       </div>
     </article>
   )

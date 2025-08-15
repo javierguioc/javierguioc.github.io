@@ -1,7 +1,7 @@
 export type Project = {
   title: string
   description: string
-  githubUrl: string
+  codeUrl: string
   demoUrl?: string
   thumbnail?: string
   tags?: string[]
@@ -13,7 +13,7 @@ export const projects: Project[] = [
     title: 'Emotion Classifier Dashboard',
     description:
       'Interactive dashboard that classifies emotions from text using a fine-tuned model. Built with Hugging Face Spaces.',
-    githubUrl: 'https://github.com/javierguioc',
+    codeUrl: 'https://huggingface.co/spaces/JavierGuio/emotion_classifier_dashboard/tree/main',
     demoUrl: 'https://huggingface.co/spaces/JavierGuio/emotion_classifier_dashboard',
     thumbnail: '/thumbnails/emotion-classifier.svg',
     tags: ['NLP', 'Hugging Face', 'Demo'],
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: 'Attention Explorer',
     description:
       'Visualizes and analyzes attention mechanisms in autoregressive models (DistilGPT2) to understand how transformers process text. Shows causal attention patterns across layers and heads.',
-    githubUrl: 'https://github.com/javierguioc',
+    codeUrl: 'https://huggingface.co/spaces/JavierGuio/attention-explorer/tree/main',
     demoUrl: 'https://huggingface.co/spaces/JavierGuio/attention-explorer',
     thumbnail: '/thumbnails/attention-explorer.svg',
     tags: ['Transformers', 'Attention', 'Visualization'],

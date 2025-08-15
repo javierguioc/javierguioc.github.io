@@ -138,7 +138,14 @@ export default function App() {
             GitHub
           </a>
           <a
-            href="mailto:javier@email.com"
+            href="https://huggingface.co/JavierGuio"
+            target="_blank"
+            className="rounded-md border border-white/10 px-3 py-1.5 hover:bg-white/5 text-neutral-200"
+          >
+            Hugging Face
+          </a>
+          <a
+            href="mailto:hernan.guioc@gmail.com"
             className="rounded-md border border-white/10 px-3 py-1.5 hover:bg-white/5 text-neutral-200"
           >
             Email
