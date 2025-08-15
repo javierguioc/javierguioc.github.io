@@ -1,0 +1,94 @@
+<svg width="400" height="225" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#171717"/>
+    </linearGradient>
+    <linearGradient id="attention" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="50%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="225" fill="url(#bg)"/>
+  
+  <!-- Attention matrix background -->
+  <rect x="60" y="50" width="120" height="120" rx="8" fill="#171717" stroke="#404040" stroke-width="1"/>
+  
+  <!-- Grid pattern for attention matrix -->
+  <g stroke="#525252" stroke-width="0.5" opacity="0.3">
+    <line x1="75" y1="50" x2="75" y2="170"/>
+    <line x1="90" y1="50" x2="90" y2="170"/>
+    <line x1="105" y1="50" x2="105" y2="170"/>
+    <line x1="120" y1="50" x2="120" y2="170"/>
+    <line x1="135" y1="50" x2="135" y2="170"/>
+    <line x1="150" y1="50" x2="150" y2="170"/>
+    <line x1="165" y1="50" x2="165" y2="170"/>
+    
+    <line x1="60" y1="65" x2="180" y2="65"/>
+    <line x1="60" y1="80" x2="180" y2="80"/>
+    <line x1="60" y1="95" x2="180" y2="95"/>
+    <line x1="60" y1="110" x2="180" y2="110"/>
+    <line x1="60" y1="125" x2="180" y2="125"/>
+    <line x1="60" y1="140" x2="180" y2="140"/>
+    <line x1="60" y1="155" x2="180" y2="155"/>
+  </g>
+  
+  <!-- Causal attention pattern (lower triangle) -->
+  <rect x="67.5" y="57.5" width="7.5" height="7.5" fill="url(#attention)" opacity="0.8"/>
+  
+  <rect x="67.5" y="72.5" width="7.5" height="7.5" fill="url(#attention)" opacity="0.6"/>
+  <rect x="82.5" y="72.5" width="7.5" height="7.5" fill="url(#attention)" opacity="0.9"/>
+  
+  <rect x="67.5" y="87.5" width="7.5" height="7.5" fill="url(#attention)" opacity="0.4"/>
+  <rect x="82.5" y="87.5" width="7.5" height="7.5" fill="url(#attention)" opacity="0.7"/>
+  <rect x="97.5" y="87.5" width="7.5" height="7.5" fill="url(#attention)" opacity="0.8"/>
+  
+  <rect x="67.5" y="102.5" width="7.5" height="7.5" fill="url(#attention)" opacity="0.3"/>
+  <rect x="82.5" y="102.5" width="7.5" height="7.5" fill="url(#attention)" opacity="0.5"/>
+  <rect x="97.5" y="102.5" width="7.5" height="7.5" fill="url(#attention)" opacity="0.6"/>
+  <rect x="112.5" y="102.5" width="7.5" height="7.5" fill="url(#attention)" opacity="0.9"/>
+  
+  <rect x="67.5" y="117.5" width="7.5" height="7.5" fill="url(#attention)" opacity="0.2"/>
+  <rect x="82.5" y="117.5" width="7.5" height="7.5" fill="url(#attention)" opacity="0.4"/>
+  <rect x="97.5" y="117.5" width="7.5" height="7.5" fill="url(#attention)" opacity="0.5"/>
+  <rect x="112.5" y="117.5" width="7.5" height="7.5" fill="url(#attention)" opacity="0.7"/>
+  <rect x="127.5" y="117.5" width="7.5" height="7.5" fill="url(#attention)" opacity="0.8"/>
+  
+  <!-- Token representations -->
+  <g transform="translate(220, 80)">
+    <rect x="0" y="0" width="60" height="20" rx="10" fill="#262626" stroke="#404040" stroke-width="1"/>
+    <text x="30" y="13" font-family="monospace" font-size="10" fill="#a3a3a3" text-anchor="middle">Token 1</text>
+  </g>
+  
+  <g transform="translate(220, 110)">
+    <rect x="0" y="0" width="60" height="20" rx="10" fill="#262626" stroke="#404040" stroke-width="1"/>
+    <text x="30" y="13" font-family="monospace" font-size="10" fill="#a3a3a3" text-anchor="middle">Token 2</text>
+  </g>
+  
+  <g transform="translate(220, 140)">
+    <rect x="0" y="0" width="60" height="20" rx="10" fill="#262626" stroke="#404040" stroke-width="1"/>
+    <text x="30" y="13" font-family="monospace" font-size="10" fill="#a3a3a3" text-anchor="middle">Token N</text>
+  </g>
+  
+  <!-- Attention flow lines -->
+  <path d="M 185 90 Q 200 95 220 95" stroke="#10b981" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M 185 120 Q 200 125 220 125" stroke="#06b6d4" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M 185 150 Q 200 155 220 155" stroke="#8b5cf6" stroke-width="1.5" fill="none" opacity="0.6"/>
+  
+  <!-- Transformer icon -->
+  <g transform="translate(320, 85)">
+    <rect x="0" y="0" width="50" height="50" rx="8" fill="#171717" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="10" y="10" width="30" height="4" rx="2" fill="#10b981" opacity="0.6"/>
+    <rect x="10" y="18" width="30" height="4" rx="2" fill="#06b6d4" opacity="0.6"/>
+    <rect x="10" y="26" width="30" height="4" rx="2" fill="#8b5cf6" opacity="0.6"/>
+    <rect x="10" y="34" width="30" height="4" rx="2" fill="#10b981" opacity="0.4"/>
+    <text x="25" y="45" font-family="system-ui, sans-serif" font-size="8" fill="#a3a3a3" text-anchor="middle">GPT2</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="35" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#f5f5f5">Attention Explorer</text>
+  <text x="200" y="200" font-family="system-ui, sans-serif" font-size="12" fill="#a3a3a3">Transformers • Attention • Visualization</text>
+</svg>
