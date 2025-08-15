@@ -18,6 +18,18 @@ export const projects: Project[] = [
     tags: ['NLP', 'Hugging Face', 'Demo'],
     year: new Date().getFullYear(),
   },
+  {
+    title: 'Attention Explorer',
+    description:
+      'Visualizes and analyzes attention mechanisms in autoregressive models (DistilGPT2) to understand how transformers process text. Shows causal attention patterns across layers and heads.',
+    githubUrl: 'https://github.com/javierguioc',
+    demoUrl: 'https://huggingface.co/spaces/JavierGuio/attention-explorer',
+    tags: ['Transformers', 'Attention', 'Visualization'],
+    year: new Date().getFullYear(),
+  },
 ]
+
+
+
 
 
