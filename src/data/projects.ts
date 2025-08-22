@@ -29,6 +29,16 @@ export const projects: Project[] = [
     tags: ['Transformers', 'Attention', 'Visualization'],
     year: new Date().getFullYear(),
   },
+  {
+    title: 'MultiNER Studio',
+    description:
+      'Interactive multilingual Named Entity Recognition with XLM-RoBERTa. Features model comparison, evaluation metrics, and cross-lingual transfer analysis across English, Spanish, German, French, and more.',
+    codeUrl: 'https://huggingface.co/spaces/JavierGuio/MultiNER/tree/main',
+    demoUrl: 'https://huggingface.co/spaces/JavierGuio/MultiNER',
+    thumbnail: '/thumbnails/multiner.svg',
+    tags: ['NER', 'Multilingual', 'XLM-RoBERTa'],
+    year: new Date().getFullYear(),
+  },
 ]
 
 
