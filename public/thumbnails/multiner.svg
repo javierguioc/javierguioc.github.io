@@ -79,3 +79,6 @@
   <text x="200" y="35" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#f5f5f5">MultiNER Studio</text>
   <text x="200" y="200" font-family="system-ui, sans-serif" font-size="12" fill="#a3a3a3">Multilingual NER • XLM-RoBERTa • Comparison</text>
 </svg>
+
+
+

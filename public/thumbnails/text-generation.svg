@@ -1,0 +1,95 @@
+<svg width="400" height="225" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#171717"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="accent3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="225" fill="url(#bg)"/>
+  
+  <!-- Input text box -->
+  <rect x="40" y="80" width="100" height="65" rx="8" fill="#171717" stroke="#404040" stroke-width="1"/>
+  <text x="50" y="100" font-family="system-ui, sans-serif" font-size="10" fill="#a3a3a3">Input text:</text>
+  <rect x="50" y="105" width="80" height="3" rx="1.5" fill="#525252"/>
+  <rect x="50" y="112" width="70" height="3" rx="1.5" fill="#525252"/>
+  <rect x="50" y="119" width="75" height="3" rx="1.5" fill="#525252"/>
+  <rect x="50" y="126" width="60" height="3" rx="1.5" fill="#525252"/>
+  
+  <!-- AI Model (Brain icon) -->
+  <g transform="translate(200, 112)">
+    <circle cx="0" cy="0" r="25" fill="#262626" stroke="#404040" stroke-width="2"/>
+    <!-- Brain pattern -->
+    <path d="M -15 -8 Q -10 -15 0 -12 Q 10 -15 15 -8 Q 12 0 8 8 Q 0 15 -8 8 Q -12 0 -15 -8" 
+          fill="none" stroke="url(#accent)" stroke-width="2"/>
+    <path d="M -8 -5 Q -3 -8 3 -5 Q 8 -2 5 3 Q 0 8 -5 3 Q -8 -2 -8 -5" 
+          fill="none" stroke="url(#accent)" stroke-width="1.5"/>
+    <!-- Neural nodes -->
+    <circle cx="-6" cy="-3" r="1.5" fill="#3b82f6"/>
+    <circle cx="6" cy="-3" r="1.5" fill="#3b82f6"/>
+    <circle cx="0" cy="5" r="1.5" fill="#3b82f6"/>
+  </g>
+  
+  <!-- Output strategies -->
+  <!-- Strategy 1: Greedy -->
+  <rect x="260" y="40" width="120" height="35" rx="6" fill="#171717" stroke="#404040" stroke-width="1"/>
+  <text x="270" y="55" font-family="system-ui, sans-serif" font-size="9" fill="#60a5fa">Greedy Search</text>
+  <rect x="270" y="58" width="90" height="2.5" rx="1" fill="url(#accent)"/>
+  <rect x="270" y="63" width="80" height="2.5" rx="1" fill="url(#accent)" opacity="0.8"/>
+  <rect x="270" y="68" width="85" height="2.5" rx="1" fill="url(#accent)" opacity="0.6"/>
+  
+  <!-- Strategy 2: Beam Search -->
+  <rect x="260" y="85" width="120" height="35" rx="6" fill="#171717" stroke="#404040" stroke-width="1"/>
+  <text x="270" y="100" font-family="system-ui, sans-serif" font-size="9" fill="#a78bfa">Beam Search</text>
+  <rect x="270" y="103" width="95" height="2.5" rx="1" fill="url(#accent2)"/>
+  <rect x="270" y="108" width="70" height="2.5" rx="1" fill="url(#accent2)" opacity="0.8"/>
+  <rect x="270" y="113" width="88" height="2.5" rx="1" fill="url(#accent2)" opacity="0.6"/>
+  
+  <!-- Strategy 3: Nucleus Sampling -->
+  <rect x="260" y="130" width="120" height="35" rx="6" fill="#171717" stroke="#404040" stroke-width="1"/>
+  <text x="270" y="145" font-family="system-ui, sans-serif" font-size="9" fill="#34d399">Nucleus (Top-p)</text>
+  <rect x="270" y="148" width="85" height="2.5" rx="1" fill="url(#accent3)"/>
+  <rect x="270" y="153" width="92" height="2.5" rx="1" fill="url(#accent3)" opacity="0.8"/>
+  <rect x="270" y="158" width="75" height="2.5" rx="1" fill="url(#accent3)" opacity="0.6"/>
+  
+  <!-- Arrows from input to AI -->
+  <path d="M 145 112 L 170 112" stroke="#525252" stroke-width="2" marker-end="url(#arrowhead1)"/>
+  
+  <!-- Arrows from AI to outputs -->
+  <path d="M 225 100 L 255 57" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrowhead2)"/>
+  <path d="M 225 112 L 255 102" stroke="#8b5cf6" stroke-width="1.5" marker-end="url(#arrowhead3)"/>
+  <path d="M 225 124 L 255 147" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrowhead4)"/>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead1" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#525252"/>
+    </marker>
+    <marker id="arrowhead2" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#3b82f6"/>
+    </marker>
+    <marker id="arrowhead3" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#8b5cf6"/>
+    </marker>
+    <marker id="arrowhead4" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#10b981"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="40" y="35" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#f5f5f5">Text Generation Studio</text>
+  <text x="40" y="200" font-family="system-ui, sans-serif" font-size="12" fill="#a3a3a3">NLP • DistilGPT-2 • Generation Strategies</text>
+</svg>

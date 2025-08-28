@@ -39,6 +39,16 @@ export const projects: Project[] = [
     tags: ['NER', 'Multilingual', 'XLM-RoBERTa'],
     year: new Date().getFullYear(),
   },
+  {
+    title: 'Creative Text Generation Studio',
+    description:
+      'Interactive app demonstrating various text generation strategies using DistilGPT-2. Explore how different decoding strategies like greedy search, beam search, and nucleus sampling affect creativity vs. coherence in AI text output.',
+    codeUrl: 'https://huggingface.co/spaces/JavierGuio/textGenerationStudio/tree/main',
+    demoUrl: 'https://huggingface.co/spaces/JavierGuio/textGenerationStudio',
+    thumbnail: '/thumbnails/text-generation.svg',
+    tags: ['NLP', 'Text Generation', 'DistilGPT-2', 'Transformers'],
+    year: new Date().getFullYear(),
+  },
 ]
 
 
