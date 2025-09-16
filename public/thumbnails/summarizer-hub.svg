@@ -1,0 +1,103 @@
+<svg width="400" height="225" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#171717"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="accent3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#67e8f9"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="225" fill="url(#bg)"/>
+  
+  <!-- Original Document (Left) -->
+  <rect x="30" y="60" width="80" height="105" rx="6" fill="#171717" stroke="#404040" stroke-width="1"/>
+  <text x="40" y="80" font-family="system-ui, sans-serif" font-size="8" fill="#a3a3a3">Long Document</text>
+  <!-- Text lines to represent content -->
+  <rect x="40" y="85" width="60" height="2" rx="1" fill="#525252"/>
+  <rect x="40" y="90" width="55" height="2" rx="1" fill="#525252"/>
+  <rect x="40" y="95" width="60" height="2" rx="1" fill="#525252"/>
+  <rect x="40" y="100" width="50" height="2" rx="1" fill="#525252"/>
+  <rect x="40" y="105" width="60" height="2" rx="1" fill="#525252"/>
+  <rect x="40" y="110" width="45" height="2" rx="1" fill="#525252"/>
+  <rect x="40" y="115" width="60" height="2" rx="1" fill="#525252"/>
+  <rect x="40" y="120" width="55" height="2" rx="1" fill="#525252"/>
+  <rect x="40" y="125" width="60" height="2" rx="1" fill="#525252"/>
+  <rect x="40" y="130" width="50" height="2" rx="1" fill="#525252"/>
+  <rect x="40" y="135" width="55" height="2" rx="1" fill="#525252"/>
+  <rect x="40" y="140" width="60" height="2" rx="1" fill="#525252"/>
+  <rect x="40" y="145" width="45" height="2" rx="1" fill="#525252"/>
+  <rect x="40" y="150" width="50" height="2" rx="1" fill="#525252"/>
+  
+  <!-- Processing Center -->
+  <g transform="translate(200, 112)">
+    <!-- Main processor circle -->
+    <circle cx="0" cy="0" r="30" fill="#262626" stroke="#404040" stroke-width="2"/>
+    
+    <!-- Model labels -->
+    <g transform="translate(-12, -15)">
+      <rect x="0" y="0" width="24" height="8" rx="2" fill="url(#accent)" opacity="0.8"/>
+      <text x="12" y="5.5" font-family="system-ui, sans-serif" font-size="6" fill="#0a0a0a" text-anchor="middle">BART</text>
+    </g>
+    <g transform="translate(-8, -3)">
+      <rect x="0" y="0" width="16" height="8" rx="2" fill="url(#accent2)" opacity="0.8"/>
+      <text x="8" y="5.5" font-family="system-ui, sans-serif" font-size="6" fill="#f5f5f5" text-anchor="middle">T5</text>
+    </g>
+    <g transform="translate(-15, 8)">
+      <rect x="0" y="0" width="30" height="8" rx="2" fill="url(#accent3)" opacity="0.8"/>
+      <text x="15" y="5.5" font-family="system-ui, sans-serif" font-size="6" fill="#0a0a0a" text-anchor="middle">TF-IDF</text>
+    </g>
+    
+    <!-- Processing gears/icons -->
+    <g opacity="0.6">
+      <circle cx="-8" cy="8" r="3" fill="none" stroke="#f59e0b" stroke-width="1"/>
+      <circle cx="10" cy="-8" r="3" fill="none" stroke="#8b5cf6" stroke-width="1"/>
+      <circle cx="8" cy="12" r="3" fill="none" stroke="#06b6d4" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- Summarized Document (Right) -->
+  <rect x="290" y="85" width="80" height="55" rx="6" fill="#171717" stroke="#404040" stroke-width="1"/>
+  <text x="300" y="105" font-family="system-ui, sans-serif" font-size="8" fill="#a3a3a3">Summary</text>
+  <!-- Fewer text lines to show summarization -->
+  <rect x="300" y="110" width="60" height="2" rx="1" fill="url(#accent)"/>
+  <rect x="300" y="115" width="55" height="2" rx="1" fill="url(#accent2)" opacity="0.8"/>
+  <rect x="300" y="120" width="50" height="2" rx="1" fill="url(#accent3)" opacity="0.8"/>
+  <rect x="300" y="125" width="45" height="2" rx="1" fill="#10b981" opacity="0.8"/>
+  
+  <!-- Flow arrows -->
+  <path d="M 115 112 L 165 112" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowhead1)"/>
+  <path d="M 235 112 L 285 112" stroke="#06b6d4" stroke-width="2" marker-end="url(#arrowhead2)"/>
+  
+  <!-- Comparison indicator -->
+  <g transform="translate(200, 160)">
+    <rect x="-25" y="0" width="50" height="12" rx="4" fill="#262626" stroke="#404040" stroke-width="1"/>
+    <text x="0" y="7.5" font-family="system-ui, sans-serif" font-size="7" fill="#a3a3a3" text-anchor="middle">Compare</text>
+  </g>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead1" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowhead2" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#06b6d4"/>
+    </marker>
+  </defs>
+  
+  <!-- Title and tags -->
+  <text x="30" y="35" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#f5f5f5">Summarizer Hub</text>
+  <text x="30" y="200" font-family="system-ui, sans-serif" font-size="12" fill="#a3a3a3">NLP • BART • T5 • Extractive • Abstractive</text>
+</svg>
+

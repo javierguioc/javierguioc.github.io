@@ -49,6 +49,27 @@ export const projects: Project[] = [
     tags: ['NLP', 'Text Generation', 'DistilGPT-2', 'Transformers'],
     year: new Date().getFullYear(),
   },
+  {
+    title: 'Summarizer Hub',
+    description:
+      'Comprehensive text summarization app featuring extractive (TF-IDF) and abstractive approaches with DistilBART, BART, and T5 models. Compare side-by-side results, adjust parameters, and analyze compression ratios with real-time metrics.',
+    codeUrl: 'https://huggingface.co/spaces/JavierGuio/sumarizationHub/tree/main',
+    demoUrl: 'https://huggingface.co/spaces/JavierGuio/sumarizationHub',
+    thumbnail: '/thumbnails/summarizer-hub.svg',
+    tags: ['NLP', 'Summarization', 'BART', 'T5', 'TF-IDF'],
+    year: new Date().getFullYear(),
+  },
+  {
+    title: 'Question Answering with Transformers',
+    description:
+      'Interactive AI-powered Question Answering demo using DistilBERT fine-tuned on SQuAD dataset. Features visual answer highlighting, confidence scoring, and robust error handling with a modern Gradio interface.',
+    codeUrl: 'https://huggingface.co/spaces/JavierGuio/QA_Demo/tree/main',
+    demoUrl: 'https://huggingface.co/spaces/JavierGuio/QA_Demo',
+    thumbnail: '/thumbnails/question-answering.svg',
+    tags: ['DistilBERT', 'Question Answering', 'SQuAD', 'Extractive NLP'],
+    year: new Date().getFullYear(),
+  },
+
 ]
 
 
